@@ -3,45 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登录</title>
-    <link rel="stylesheet" href="\css\login.css">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <!-- logo图片 -->
+    <link rel="icon" href="img/3a9e00ef08124bf5b412778f4abee003.png">
 </head>
+
 <body>
-    <div id = "login_p">
-        <!-- alt表示图片的提示信息 -->
-        <img src="img\Ikun_web_background.jpg" alt="#" id="left_img">
-    </div>
-    <form action="#" method="post" id="login_form">
-        <div id = "rightlogin">
-            <label for="username">用户名 :</label>
-            <!-- 输入提示使用title属性 -->
-            <!--自动补全用:autocomplete="on"--> 
-            <!-- 输入框内显示提示用placeholder属性 -->
-            <input type="text" id="username" name="username" required title="请输入用户名"  autocomplete="off" placeholder="请输入用户名">
-            <!-- 换行用br标签 -->
-            <br>
-            <label for="password">密码 :</label>
-            <input type="password" id="password" name="password" required title="请输入密码"  autocomplete="off" placeholder="请输入密码">
-            <div id="login_btn">
-                <input type="submit" value="登录">
-            </div>
-            <br>
-            <a href="#">忘记密码</a>
-            <a href="#">注册账号</a>
-
-
+    <div class="header-box">
+        <div class="right">
+            <img src="img/1e3ea815deba4129813a4072332521c8.gif" alt="" id = "logo">
+            <h3 id="website-title">爱坤网登录</h3>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </form>
-    <div id="login_footer">
-        <p>Copyright © 2021 爱坤网 All Rights Reserved</p>
+        <div class="mid"></div>
+        <div class="left"></div>
+        
     </div>
+    <div class="login-box">
+        <div class="left">
+            <img src="img/kunkun_background.jpg" alt="">
+        </div>
+        <div class="right">
+            <h3 id="title">登录</h3>
+            <input type="text" class="input" placeholder="用户名" required >
+            <input type="password" class="input" placeholder="密码" required>
+            <a href="register.html" id="register">没有账号？点此注册</a><span> |</span>
+            <a href="#" id="forget">忘记密码？点此找回</a>
+            <button class="btn1">登录</button>
+        </div>
+    </div>
+    <div class="footer">
 
-
-
+    </div>
+    
 </body>
-
-<script src="\js\login.js"></script>
 </html>

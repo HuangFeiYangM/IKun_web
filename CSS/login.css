@@ -1,42 +1,123 @@
-body {
-    background: linear-gradient(to right, rgb(14, 178, 220), rgb(61, 29, 166));
-}
-
-#left_img {
-    height: 800px;
-    width: 1000px;
-    margin-top: 100px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 10%;
-    left: 23%;
-
-}
-
-#rightlogin {
-    height: 800px;
-    width: 1000px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 5px;
-    margin-top: 100px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 10%;
-    left: 40%;
-}
-
-#login_footer {
-    position: absolute;
-    bottom: 0;
+.header-box {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
-    background-color: white;
-    /* border-top:是顶部的边框，1px是宽度，#ccc是颜色 */
-    border-top: 5px solid hwb(181 5% 20%);
+    height: 100px;
+    background-color: #d2d9d6;
+    box-sizing: border-box;
+
+}
+
+.right {
+    position: relative;
+    background-color: #10955b;
+}
+
+#logo {
+    object-fit: cover;
+    position: relative;
+    top: 10px;
+    left: 2.5px;
+    width: 75px;
+    height: 75px;
+    border-radius: 25px;
+}
+
+#website-title {
+    object-fit: cover;
+    position: relative;
+    top: 10px;
+    left: 100px;
+    background-color: blue;
+    font-size: 25px;
+
+}
+
+
+
+
+body {
+    background-image: url(../img/Ikun_web_background.jpg);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.login-box {
+    width: 60%;
+
+    height: 40%;
+    box-shadow: 0 10px 20px rgba(21, 5, 5, 0.88);
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.left>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 10px;
+
+}
+
+.right {
+    width: 40%;
+    height: 100%;
+    /* padding: 0 20px;是为了让右侧的元素在左侧的元素中居中,其中20px是左右边距 */
+    padding: 0 20px;
+    /* box-sizing: border-box是为了让右侧的元素的宽度和高度都能包含在父元素的宽度和高度中 */
+    box-sizing: border-box;
+}
+
+#title {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: aliceblue;
+    outline: none;
+    border-bottom: 2px solid #c4dd0b;
+    font-size: medium;
+}
+
+#register {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0bdd7b;
+    /* cursor: pointer;是为了让鼠标移到按钮上时,可以有反应 */
+    cursor: pointer;
+}
+
+#forget {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0bdd7b;
+    cursor: pointer;
+}
+
+.btn1 {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    top: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dce715;
 }

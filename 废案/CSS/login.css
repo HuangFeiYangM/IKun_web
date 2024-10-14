@@ -1,0 +1,128 @@
+body {
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right, rgb(14, 178, 220), rgb(61, 29, 166)); */
+    background-image: url(../img/Ikun_web_background.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+#login_header {
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    /* border-bottom:是底部的边框，1px是宽度，#ccc是颜色 */
+    /* border-bottom: 5px solid hwb(181 5% 20%); */
+    text-align: left;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(38, 18, 18, 0.864);
+}
+
+#login_title {
+    position: absolute;
+    left: 8%;
+    top: 0;
+}
+
+#line {
+    background-color: rgb(213, 64, 23);
+    position: absolute;
+    top: 0;
+    left: 16%;
+    height: 100%;
+    width: 3px;
+}
+
+#denlu {
+    /* "登录"字体调节 */
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(39, 23, 213);
+}
+
+/* =========================================================== */
+
+.loginbox {
+    width:60%;
+    height: auto;
+    /* flex意味着弹性布局，可以使得子元素自动调整大小以填充可用空间 */
+    display: flex;
+    /* fixed意味着元素在页面的固定位置 */
+    position: fixed;
+    top : 50%;
+    left: 50%;
+    /* transform属性可以用来移动元素 */
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(38, 18, 18, 0.864);
+
+}
+.left{
+    width: 60%;
+}
+
+.letf>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* object-fit属性设置成cover可以让图片充满整个元素 */
+    object-fit: cover;
+}
+.right {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    /* 边框 */
+    border-left: 1px solid #ccc;
+    /* 居中 */
+}
+    
+
+
+
+/* ========================================================================== */
+
+
+
+
+
+
+
+.login_footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+    text-align: "center";
+    /* border-top:是顶部的边框，1px是宽度，#ccc是颜色 */
+    border-top: 5px solid hwb(181 5% 20%);
+    padding-top: 10px;
+}
+
+.col {
+    /* background-color: turquoise; */
+    /* display设置成inline-block可以使得元素在同一行显示 */
+    display: inline-block;
+    /* display还可以设置成block，使得元素在新行显示 */
+    position: relative;
+    /* 对齐上方 */
+    background-color: rgb(53, 160, 26);
+    top: 0%;
+    left: 10%;
+    padding-right: 100px;
+    text-align: "center";
+    margin-right: 30px;
+
+}
+
+.input {
+    width: 50%;
+
+    margin-bottom: 10px;
+
+    height: 30px;
+
+}
