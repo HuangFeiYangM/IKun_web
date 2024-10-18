@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,142 @@
     <link rel="stylesheet" href="CSS/login.css">
     <!-- logo图片 -->
     <link rel="icon" href="img/3a9e00ef08124bf5b412778f4abee003.png">
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div class="header-box">
-        <div class="right">
-            <img src="img/1e3ea815deba4129813a4072332521c8.gif" alt="" id = "logo">
-            <h3 id="website-title">爱坤网登录</h3>
+    <div id="header">
+        <div id="logo"><img src="img/下载.jpg" alt=""></div>
+        <div id="nav">
+            <ul>
+                <li><a href="Home.html">首页</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">服务项目</a></li>
+                <li><a href="#">新闻动态</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
         </div>
-        <div class="mid"></div>
-        <div class="left"></div>
-        
+
+        <div id="time">
+            <div class="clock">
+                <div class="flip">
+                    <div class="digital front" data-number="0"></div>
+                    <div class="digital back" data-number="1"></div>
+                </div>
+                <div class="flip">
+                    <div class="digital front" data-number="0"></div>
+                    <div class="digital back" data-number="1"></div>
+                </div>
+                <em class="divider">:</em>
+                <div class="flip">
+                    <div class="digital front" data-number="0"></div>
+                    <div class="digital back" data-number="1"></div>
+                </div>
+                <div class="flip">
+                    <div class="digital front" data-number="0"></div>
+                    <div class="digital back" data-number="1"></div>
+                </div>
+                <em class="divider">:</em>
+                <div class="flip">
+                    <div class="digital front" data-number="0"></div>
+                    <div class="digital back" data-number="1"></div>
+                </div>
+                <div class="flip">
+                    <div class="digital front" data-number="0"></div>
+                    <div class="digital back" data-number="1"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="login-header">
+            <a href="#" id="login_btn"><del style="color: rgb(0, 14, 141);">登 录</del></a>
+            <span>&nbsp;&nbsp; |</span>
+            <a href="register.html" id="register_btn">注 册</a>
+        </div>
     </div>
+
+
+
+
     <div class="login-box">
         <div class="left">
             <img src="img/kunkun_background.jpg" alt="">
         </div>
         <div class="right">
-            <h3 id="title">登录</h3>
-            <input type="text" class="input" placeholder="用户名" required >
+            <h3 id="title">
+                <pre>登    录</pre>
+            </h3>
+            <input type="text" class="input" placeholder="用户名" required>
             <input type="password" class="input" placeholder="密码" required>
-            <a href="register.html" id="register">没有账号？点此注册</a><span> |</span>
+            <a href="register.html" id="register">没有账号？点此注册</a><span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
             <a href="#" id="forget">忘记密码？点此找回</a>
             <button class="btn1">登录</button>
         </div>
     </div>
-    <div class="footer">
 
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>联系方式</h3>
+                <ul>
+                    <li class="weixin">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weixin"></use>
+                        </svg>
+                        微信:18767892672
+                    </li>
+                    <li class="phone">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-yingduanmao
+                            "></use>
+                        </svg>
+                        电话:18767892672
+                    </li>
+                    <li class="email">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="
+                            #icon-caixukun"></use>
+                        </svg>
+                        qq邮箱:18681344413@qq.com
+                    </li>
+                    <li class="github">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                        github:<a href="https://github.com/" style="color: antiquewhite;">https://github.com/</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2021 爱坤网 All Rights Reserved</p>
+        </div>
     </div>
-    
+
 </body>
+<script src="./img/tbk_1/iconfont.js"></script>
+<script src="./js/翻页时钟.js"></script>
+
+
+</script>
+
 </html>
