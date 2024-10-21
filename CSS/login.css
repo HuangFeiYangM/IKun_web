@@ -52,51 +52,82 @@
 
 
 #login-header {
+
+    position: absolute;
+    right: 5px;
     float: right;
-    padding: 25px 30px;
+    width: 250px;
+    height: 75px;
+    background-color: #2e3531;
+
     /* 调整上下内边距 */
 }
 
+#login-header {
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+    width: 250px;
+    height: 90px;
+    border-bottom-left-radius: 10px;
+    background-color: #235ce9;
+    /* 添加top属性以确定垂直位置 */
+    /* top: 5px; 根据需要调整 */
+}
+
 #login-header a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 16px;
-    margin-left: 15px;
+    font-size: 20px;
     font-weight: bold;
-    font-size: medium;
+    display: inline-block;
+    width: 90px;
+    height: 85%;
+    line-height: 50px;
+    /* 垂直居中 */
+    text-align: center;
+    /* 居中 */
+    position: relative;
+    top: 10px;
+    left: 40px;
 }
 
 #login-header span {
-    margin: 0 10px;
-    /* 为分隔符添加左右外边距 */
-    color: white;
-}
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 12px;
+    right: 105px;
 
-#login-header a {
-    font-size: large;
 }
 
 #login-header a:hover {
-    color: rgb(0, 13, 201);
+    color: rgb(249, 8, 0);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 
 
-/* 时钟 */
-#timer {
-    /* flex意味着子元素在主轴上居中 */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center意味着子元素在交叉轴上居中 */
-    /* align-items: center; */
-    height: 15vh;
-    /* 浮动 */
-    float: right;
-    
+
+
+/* time-box */
+.time-box {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    width: 275px;
+    height: 80px;
+    background-color: #cde1d3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
 }
+
 
 .clock {
     display: flex;
+    justify-content: center;
 }
 
 /* 时钟的分隔 */
@@ -110,7 +141,6 @@
 /* 时钟的卡片 */
 .clock .flip {
     position: relative;
-    top: 25px;
     width: 35px;
     height: 60px;
     margin: 2px;
@@ -245,10 +275,6 @@
 
 
 
-
-
-
-
 /* 主体 */
 
 body {
@@ -258,6 +284,10 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center center;
 }
 
 .login-box {
@@ -280,6 +310,7 @@ body {
     object-fit: cover;
     display: block;
     border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     box-sizing: border-box;
     filter: saturate(1.5);
     /* 饱和度减半 */
@@ -370,7 +401,7 @@ body {
     bottom: 0;
     width: 100%;
     /* 确保footer覆盖整个底部宽度 */
-    font-size: 15px;
+    font-size: 20px;
     height: 15%;
 }
 

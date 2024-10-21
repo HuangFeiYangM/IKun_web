@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.d1 {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    min-width: 300px;
+    width: 100%;
+    height: 200px;
+    border: 5px solid;
+    background-color: #fcfcfc;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.d1 img {
+    height: 200px;
+    /* width是临时的 */
+    width: auto;
+    border: 2px solid red;
+}
+
+.d1 h1 {
+    height: auto;
+    width: auto;
+    border: 2px solid blue;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 75px;
+    /* 设置字体居中 */
+    text-align: center;
+    /* 设置字体 */
+    font-family: "宋体", "Arial Narrow", sans-serif;
+}
+
+
+
+
+.d2 {
+    display: flex;
+    justify-content: flex-start;
+    /* 使子元素靠左对齐 */
+    background-color: #b3b3b3;
+    width: 100%;
+    height: 75px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.nav_top {
+    display: flex;
+    /* 设置为 flex 容器 */
+    width: 100%;
+    /* 占据整个 .d2 的宽度 */
+}
+
+.d2 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* 占据整个 .nav_top 的宽度 */
+    justify-content: space-around;
+    /* 子元素间距均分 */
+}
+
+.d2 li {
+    border: 2px solid green;
+    margin: 0;
+    /* 移除外边距 */
+    text-align: center;
+    width: 25%;
+}
+
+.d2 a {
+    display: block;
+    /* 使链接占据整个 li 的空间 */
+    padding: 10px;
+    /* 为链接添加一些内边距 */
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+.d3 {
+    background-color: #8c8c8c;
+}
+
+.d4 {
+    background-color: #595959;
+}
+
+.d5 {
+    background-color: #262626;
+}
+
+.d6 {
+    background-color: #000000;
+}
