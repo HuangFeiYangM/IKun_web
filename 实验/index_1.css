@@ -1,6 +1,9 @@
 body {
     margin: 0px;
     padding: 0px;
+    margin-left: 50px;
+    
+    margin-right: 50px;
 }
 
 
@@ -69,6 +72,7 @@ body {
     /* 占据整个 .nav_top 的宽度 */
     justify-content: space-around;
     /* 子元素间距均分 */
+
 }
 
 .d2 li {
@@ -93,20 +97,146 @@ body {
 }
 
 
+.marquee {
+    background-color: antiquewhite;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.marquee-content {
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+#closeMarquee {
+    position: absolute;
+    top: 0px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px; /* Adjust as needed */
+}
+.marquee-content:hover {
+    animation-play-state: paused;
+    /* animation-play-state: paused;  /* 鼠标悬停后暂停动画 */
+}
+
+@keyframes marquee {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
 
 
 .d3 {
+    display: flex;
     background-color: #8c8c8c;
+    width: 100%;
+    height:auto;
 }
+
+
+/* 左侧分区 */
+.right_top{
+    background-color: aqua;
+    width: 20%;
+    height:500px;
+    float: left;
+
+}
+.middle_top{
+    background-color: #00ccff;
+    width: 60%;
+    height:500px;
+    float: left;
+}
+.left_top{
+    background-color: #ffcc00;
+    width: 20%;
+    height:500px;
+    float: left;
+}
+
 
 .d4 {
     background-color: #595959;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
 }
+
+.search{
+    display: flex;
+    background-color: #00bb0c;
+}
+
+.search input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    width: 45%;
+    height: 30px;
+    border: 7px inset #d2d4d2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.search button{
+    z-index: 999;
+    background-color: #bb6400;
+    height: 44px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search img{
+    z-index: 999;
+    background-color: #bb6400;
+    position: relative;
+    height: 44px;
+    width: auto;
+    margin: 10px;
+    margin-left: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
 
 .d5 {
     background-color: #262626;
+    display: flex;
+    height: 1000px;
+}
+.aside_left{
+    background-color: #bb6400;
+    width: 15%;
+    height: 1000px;
+}
+.content_recommend{
+    background-color: #ffcc00;
+    width: 70%;
+    height: 1000px;
+}
+.aside_rught{
+    background-color: #00bb0c;
+    width: 15%;
+    height: 1000px;
+}
+.d6 {
+    background-color: #3cbdd7;
+    display: flex;
+    height: 300px;
 }
 
-.d6 {
-    background-color: #000000;
-}
+
+
