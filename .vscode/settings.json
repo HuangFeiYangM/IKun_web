@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/img/tbk_1/demo_index.html"
+    "livePreview.defaultPreviewPath": "/img/tbk_1/demo_index.html",
+    "liveServer.settings.port": 5501
 }

@@ -1,9 +1,10 @@
 body {
     margin: 0px;
     padding: 0px;
-    margin-left: 50px;
-    
-    margin-right: 50px;
+    margin-left: 10%;
+    font-family: "宋体", "Arial Narrow", sans-serif;
+    margin-right: 10%;
+    box-shadow: #8c8c8c 0px 0px 10px;
 }
 
 
@@ -14,8 +15,7 @@ body {
     min-width: 300px;
     width: 100%;
     height: 200px;
-    border: 5px solid;
-    background-color: #fcfcfc;
+    background-color: #24d545;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
@@ -50,7 +50,7 @@ body {
     /* 使子元素靠左对齐 */
     background-color: #b3b3b3;
     width: 100%;
-    height: 75px;
+    height: 70px;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
@@ -69,6 +69,7 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
+    height: auto;
     /* 占据整个 .nav_top 的宽度 */
     justify-content: space-around;
     /* 子元素间距均分 */
@@ -76,17 +77,18 @@ body {
 }
 
 .d2 li {
-    border: 2px solid green;
+    height: auto;
     margin: 0;
     /* 移除外边距 */
     text-align: center;
-    width: 25%;
+    width: 20%;
 }
 
 .d2 a {
+    height: 70px;
     display: block;
     /* 使链接占据整个 li 的空间 */
-    padding: 10px;
+    padding: 16px;
     /* 为链接添加一些内边距 */
     font-size: 30px;
     color: #fff;
@@ -96,7 +98,7 @@ body {
     box-sizing: border-box;
 }
 
-
+/* 2.5 */
 .marquee {
     background-color: antiquewhite;
     position: relative;
@@ -136,6 +138,11 @@ body {
 
 
 
+
+/* ===================================================================== */
+
+
+
 .d3 {
     display: flex;
     background-color: #8c8c8c;
@@ -146,22 +153,63 @@ body {
 
 /* 左侧分区 */
 .right_top{
+    display: grid;
     background-color: aqua;
     width: 20%;
-    height:500px;
+    height:auto;
     float: left;
+    /* box-shadow的属性值：阴影的颜色、水平偏移量、垂直偏移量、模糊半径、阴影扩散半径 */
+    overflow: hidden;
+    z-index: 10;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr;
 
 }
+.right_top p{
+    font-size: 20px;
+    background-color: #bb6400;
+    margin: 0px;
+    width: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.right_top div{
+    border: #00ccff 2px solid;
+    background-color: beige;
+    height: auto;
+    
+}
+
+
+.middle_top{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================== */
+
 .middle_top{
     background-color: #00ccff;
     width: 60%;
     height:500px;
     float: left;
+    border: 10px inset #d2d4d2; 
+    overflow: hidden;
 }
 .left_top{
     background-color: #ffcc00;
     width: 20%;
-    height:500px;
+    height:auto;
     float: left;
 }
 
