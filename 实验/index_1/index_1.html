@@ -34,7 +34,7 @@
         <button id="closeMarquee">×</button>
     </div>
     <div class="d3">
-        <div class="right_top">
+        <div class="left_top">
             <p>分区导航</p>
             <div><a href="#">原产地选择</a></div>
             <div><a href="#">木卫二原产地</a></div>
@@ -43,14 +43,35 @@
             <div><a href="#">中药材拍卖市场</a></div>
         </div>
         <div class="middle_top">
-            <ul>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <!-- Type = radio是单选按钮，name属性是用来控制单选按钮的，checked属性是默认选中的，slides_1是轮播图的容器，slide_1是轮播图的每一张图片 -->
+            
+            <ul class="slides_1">
+                <input type="radio" id="radio_1" name="control" checked>
+                <input type="radio" id="radio_2" name="control">
+                <input type="radio" id="radio_3" name="control">
+                <input type="radio" id="radio_4" name="control">
+
+                <li class="slide_1">1</li>
+                <li class="slide_1">2</li>
+                <li class="slide_1">3</li>
+                <li class="slide_1">4</li>
+
+
+                <div class = "control-visible">
+                    <!-- for 指向 -->
+                    <label for="radio_1"></label>
+                    <label for="radio_2"></label>
+                    <label for="radio_3"></label>
+                    <label for="radio_4"></label>
+                </div>
             </ul>
         </div>
-        <div class="left_top">
+        <div class="right_top">
+            <div class="time-box">
+                <p>当 前 时 间</p>
+                <p id="time">10:00:00</p>
+            </div>
+
             <div class="login">
                 <a href="#">登录</a>
             </div>
@@ -59,6 +80,13 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
     <div class="d4">
         <div class="search">
             <input type="text" placeholder="请输入关键字">

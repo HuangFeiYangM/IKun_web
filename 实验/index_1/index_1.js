@@ -8,3 +8,6 @@ document.getElementById('closeMarquee').addEventListener('click', function () {
         console.error('error1:No element with class "marquee" found');
     }
 });
+
+
+
