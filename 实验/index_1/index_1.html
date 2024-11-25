@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <div class="fixnav_left">
+        <ul>
+            <li>登录</li>
+            <li>注册</li>
+            <li>去购物车</li>
+            <li>回到顶部</li>
+        </ul>
+    </div>
+
+
     <div class="d1">
         <img src="" alt="logo">
         <h1>本草阁</h1>
@@ -44,20 +54,34 @@
         </div>
         <div class="middle_top">
             <!-- Type = radio是单选按钮，name属性是用来控制单选按钮的，checked属性是默认选中的，slides_1是轮播图的容器，slide_1是轮播图的每一张图片 -->
-            
+
             <ul class="slides_1">
                 <input type="radio" id="radio_1" name="control" checked>
-                <input type="radio" id="radio_2" name="control">
-                <input type="radio" id="radio_3" name="control">
-                <input type="radio" id="radio_4" name="control">
+                <input type="radio" id="radio_2" name="control" unchecked>
+                <input type="radio" id="radio_3" name="control" unchecked>
+                <input type="radio" id="radio_4" name="control" unchecked>
+                <!-- 轮播图的图片 -->
 
+                <!-- 轮播图的按钮-左 -->
+                <span class="slide-left-btn">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-a-teshuzuojiantou"></use>
+                    </svg>
+                </span>
                 <li class="slide_1">1</li>
                 <li class="slide_1">2</li>
                 <li class="slide_1">3</li>
                 <li class="slide_1">4</li>
 
+                <!-- 轮播图的按钮-右 -->
+                <span class="slide-right-btn">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-a-teshuyoujiantou"></use>
+                    </svg>
+                </span>
 
-                <div class = "control-visible">
+
+                <div class="control-visible">
                     <!-- for 指向 -->
                     <label for="radio_1"></label>
                     <label for="radio_2"></label>
@@ -69,14 +93,21 @@
         <div class="right_top">
             <div class="time-box">
                 <p>当 前 时 间</p>
+                <p id="date">2023-04-14</p>
                 <p id="time">10:00:00</p>
             </div>
 
-            <div class="login">
-                <a href="#">登录</a>
-            </div>
-            <div class="register">
-                <a href="#">注册</a>
+            <form class="login-form" action="/login" method="post">
+                <label for="username">用户:</label>
+                <input type="text" name="username" placeholder="请输入用户名" required>
+                <label for="password">密码:</label>
+                <input type="password" name="password" placeholder="请输入密码" required>
+                <input type="submit" value="登录">
+            </form>
+
+            <div class="registerOrforget-box">
+                <a href="">忘记密码?</a>
+                <a href="">没有账号? 点击注册</a>
             </div>
         </div>
     </div>
@@ -96,13 +127,152 @@
     </div>
     <div class="d5">
         <div class="aside_left">
+            <div class="aside_left_1">
+                <h2>中医知识学习</h2>
+                <p>
+                    <a href="#">中医基础理论</a>
+                    |
+                    <a href="#">中医临床应用</a>
+                </p>
+                <p>
+                    <a href="#">中医药学概论</a>
+                    |
+                    <a href="#">中医药学专业词汇</a>
+                </p>
+                <p>
+                    <a href="#">中医药学文献索引</a>
+                    |
+                    <a href="#">中医药学文献资料</a>
+                </p>
+                <p>
+                    <a href="#">中医药学文献阅读</a>
+                    |
+                    <a href="#">中医药学文献综述</a>
+                </p>
+            </div>
+            <div class="aside_left_1">
+                <h2>常用中医药方</h2>
+                <p>
+                    <a href="#">六味地黄丸</a>
+                    |
+                    <a href="#">四君子汤</a>
+                </p>
+                <p>
+                    <a href="#">小柴胡汤</a>
+                    |
+                    <a href="#">桂枝汤</a>
+                </p>
+                <p>
+                    <a href="#">麻黄汤</a>
+                    |
+                    <a href="#">银翘散</a>
+                </p>
+                <p>
+                    <a href="#">保和丸</a>
+                    |
+                    <a href="#">归脾汤</a>
+                </p>
+                <p>
+                    <a href="#">逍遥散</a>
+                    |
+                    <a href="#">补中益气汤</a>
+                </p>
+                <p>
+                    <a href="#">金匮肾气丸</a>
+                    |
+                    <a href="#">清瘟败毒饮</a>
+                </p>
+                <p>
+                    <a href="#">安宫牛黄丸</a>
+                    |
+                    <a href="#">养阴清肺汤</a>
+                </p>
+            </div>
+            <div>
+                <h2>抗癌专区</h2>
+                <section>
+                    <h3>最新研究新闻</h3>
+                    <ul>
+                        <li><a href="#">基于木卫二本土药材的抗癌药物研发</a></li>
+                        <li><a href="#">靶向治疗的新突破</a></li>
+                        <li><a href="#">免疫疗法的最新进展</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>治疗信息</h3>
+                    <ul>
+                        <li><a href="#">基于中医药的化疗的副作用管理</a></li>
+                        <li><a href="#">放疗技术的最新发展</a></li>
+                        <li><a href="#">手术治疗全套方案的选择</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>患者支持</h3>
+                    <ul>
+                        <li><a href="#">癌症患者心理辅导</a></li>
+                        <li><a href="#">患者家属支持团体</a></li>
+                        <li><a href="#">癌症患者生活指南</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="aside_left_1">
+                <h2>中医期刊</h2>
+                <p>
+                    <a href="#">中医药学杂志</a>
+                    |
+                    <a href="#">中医药学会议</a>
+                </p>
+                <p>
+                    <a href="#">中医药学期刊</a>
+                    |
+                    <a href="#">中医药学会刊</a>
+                </p>
+                <p>
+                    <a href="#">中医药学学报</a>
+                    |
+                    <a href="#">中医药学学术期刊</a>
+                </p>
+                <p>
+                    <a href="#">中医药学专业期刊</a>
+                    |
+                    <a href="#">中医药学综合期刊</a>
+                </p>
+            </div>
+            <div>
+                <h2>中医健康生活指导</h2>
+                <p>
+                    <a href="#">中医药健康饮食指导</a>
+                    <a href="#">中医药运动指导</a>
+                    <a href="#">中医药用药指导</a>
+                    <a href="#">中医药保健指导</a>
+                    <a href="#">中医药卫生指导</a>
+                </p>
+            </div>
+
+
 
         </div>
         <div class="content_recommend">
-            <h2>个性化推荐</h2>
+            <div>
+                <h2>今日推荐</h2>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
         <div class="aside_right">
-
+            <div class="aside_right_1">
+                
+            </div>
         </div>
 
     </div>
@@ -110,7 +280,12 @@
     <div class="d6">
 
     </div>
+
+    <div class="d7"></div>
+    <div class="d8"></div>
+    <div class="d9"></div>
 </body>
 <script src="index_1.js"></script>
+<script src="../../img/tbk_1/iconfont.js"></script>
 
 </html>
