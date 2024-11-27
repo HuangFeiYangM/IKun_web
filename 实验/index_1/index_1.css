@@ -10,6 +10,11 @@
 }
 
 
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
 
 body {
@@ -20,6 +25,63 @@ body {
     margin-right: 10%;
     box-shadow: #8c8c8c 0px 0px 10px;
 }
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* 背景图片 */
+html{
+    /* background-color: #000000; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .d1 {
@@ -467,9 +529,9 @@ input[type="submit"]:hover {
     background-color: #4cae4c;
 }
 
-.registerOrforget-box{
+.registerOrforget-box {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     width: 80%;
     height: auto;
     margin: auto;
@@ -477,13 +539,13 @@ input[type="submit"]:hover {
 }
 
 
-.registerOrforget-box a{
+.registerOrforget-box a {
     color: #000000;
     text-decoration: none;
     font-size: 14px;
     margin-left: 10px;
     background-color: #5cb85c;
-    padding: 3px ;
+    padding: 3px;
     border-radius: 10px;
 
 }
@@ -590,10 +652,10 @@ input[type="submit"]:hover {
 }
 
 
+/* ========================================================================================== */
 
 
-
-
+/* D5区域 */
 
 
 .d5 {
@@ -602,6 +664,8 @@ input[type="submit"]:hover {
 
 }
 
+
+/* 左侧侧边栏 */
 .aside_left {
     background-color: #bb6400;
     width: 25%;
@@ -609,23 +673,203 @@ input[type="submit"]:hover {
 
 }
 
-.content_recommend {
+
+
+/* 正中间内容区 */
+.content_center {
     background-color: #ffcc00;
     width: 50%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
 
 }
 
+
+
+.content_recommend,
+.content_hot {
+    background-color: #f6ee0a;
+    width: 100%;
+    height: auto;
+    min-height: 45%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+
+
+
+
+
+/* 右侧侧边栏 */
 .aside_right {
     background-color: #00bb0c;
     width: 25%;
 
 }
 
-
-
+/* ============================================================================================== */
+/* D6区域 */
 
 .d6 {
     background-color: #3cbdd7;
-    display: flex;
-    height: 300px;
+    display: grid;
+    height: auto;
+    min-height: 1000px;
+    padding: 10px;
+    grid-template-areas: 
+    "h3 h3 h3 h3 h3 h3"
+    "c1 c1 c1 c1 c1 c1"
+    "c2 c2 c2 c2 c2 c2"
+    "c2 c2 c2 c2 c2 c2"
+    "c2 c2 c2 c2 c2 c2"
+    "c2 c2 c2 c2 c2 c2"
+    ;
 }
+
+.zone_title{
+    grid-area: h3;
+}
+
+
+.zone_choice {
+    grid-area: c1;
+}
+
+.zone_choice_slide{
+    grid-area: c2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================================================ */
+
+
+/* 底部区域 */
+
+.d7 {
+    background-color: #f2f2f2;
+    /* 尾部背景颜色 */
+    padding: 20px;
+    /* 内边距 */
+    font-size: 14px;
+    /* 字体大小 */
+    text-align: center;
+    /* 文本居中 */
+    margin-top: 20px;
+    /* 与页面内容的间距 */
+}
+
+.d7 p {
+    margin: 0;
+    /* 段落间距 */
+}
+
+.d7 a {
+    color: #333;
+    /* 链接颜色 */
+    text-decoration: none;
+    /* 无下划线 */
+}
+
+
+.d7 a:hover{
+    color: #ffcc00;
+    /* 鼠标悬停颜色 */
+}
+
+
+.footer_1 {
+    display: flex; /* 使用flex布局使列并排显示 */
+    justify-content: space-between; /* 列之间的间距均匀分布 */
+    padding: 20px; /* 页脚内边距 */
+    background-color: #f7f7f7; /* 页脚背景颜色 */
+    font-family: Arial, sans-serif; /* 字体设置 */
+}
+
+.col {
+    flex: 1; /* 每个列占据相等的空间 */
+    margin: 0 10px; /* 列之间的外边距 */
+}
+
+.col h4 {
+    color: #333; /* 标题颜色 */
+    margin-bottom: 15px; /* 标题与列表间距 */
+}
+
+.col ul {
+    list-style: none; /* 移除列表点 */
+    padding: 0; /* 移除默认内边距 */
+}
+
+.col li a {
+    text-decoration: none; /* 移除下划线 */
+    color: #666; /* 链接颜色 */
+    display: block; /* 使链接填满整个li */
+    padding: 5px 0; /* 链接的内边距 */
+}
+
+.col li a:hover {
+    text-decoration: underline; /* 鼠标悬停时添加下划线 */
+    color: #000; /* 鼠标悬停时链接颜色变深 */
+}
+
+/* 响应式设计：在较小屏幕上堆叠列 */
+@media (max-width: 768px) {
+    .footer_1 {
+        flex-direction: column;
+    }
+
+    .col {
+        margin: 10px 0; /* 在较小屏幕上堆叠列时的间距 */
+    }
+}
+
