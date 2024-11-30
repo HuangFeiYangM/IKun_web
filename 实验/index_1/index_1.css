@@ -14,28 +14,20 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    position: relative;
 }
 
 
 body {
     margin: 0px;
     padding: 0px;
-    margin-left: 10%;
+    margin-left: 12%;
     font-family: "宋体", "Arial Narrow", sans-serif;
-    margin-right: 10%;
-    box-shadow: #8c8c8c 0px 0px 10px;
-}
-
-
-
-
-/* ////////////////////////////////////////////////////////////////////////////////////////////// */
-
-
-/* 背景图片 */
-html{
-    /* background-color: #000000; */
-
+    margin-right: 12%;
+    box-shadow: #010101 0px 0px 10px;
+    min-width: 1200px;
+    position: relative;
+    top: 100px;
 }
 
 
@@ -43,43 +35,9 @@ html{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+li {
+    list-style: none;
+}
 
 
 
@@ -91,23 +49,25 @@ html{
     min-width: 300px;
     width: 100%;
     height: 200px;
-    background-color: #24d545;
+    background-color: #229453;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    position: relative;
 }
 
 .d1 img {
     height: 200px;
     /* width是临时的 */
     width: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    float: left;
 }
 
 .d1 h1 {
     height: auto;
     width: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin-top: 100px;
     margin-bottom: 0px;
     font-size: 75px;
@@ -115,7 +75,30 @@ html{
     text-align: center;
     /* 设置字体 */
     font-family: "宋体", "Arial Narrow", sans-serif;
+    bottom: 30px;
+    float: left;
+    position: relative;
+    bottom: 35px;
+
 }
+
+
+.d1 p{
+    padding: 0%;
+    margin: 0%;
+    height: 30px;
+    font-size: 25px;
+    float: left;
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+
+}
+
+
+
+
+
 
 
 
@@ -615,26 +598,29 @@ input[type="submit"]:hover {
     margin-bottom: 10px;
     margin-left: 20%;
     width: 45%;
-    height: 30px;
+    height: 35px;
     border: 7px inset #d2d4d2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    overflow: hidden;
+    line-height: 100%;
+    padding: 0%;
+    font-size: 20px;
 }
 
 .search button {
     z-index: 999;
     background-color: #bb6400;
-    height: 44px;
     width: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: #000000 2px solid;
 }
 
 .search img {
     z-index: 999;
     background-color: #bb6400;
     position: relative;
-    height: 44px;
     width: auto;
     margin: 10px;
     margin-left: 0px;
@@ -642,66 +628,98 @@ input[type="submit"]:hover {
     border-bottom-right-radius: 15px;
 }
 
-
+/* ========================================================================================== */
+/* D5区域 */
 
 .d5,
 .aside_left,
 .content_recommend,
 .aside_right {
-    height: 2000px;
+    height: auto;
 }
 
 
-/* ========================================================================================== */
-
-
-/* D5区域 */
 
 
 .d5 {
     background-color: #262626;
     display: flex;
-
 }
-
 
 /* 左侧侧边栏 */
 .aside_left {
     background-color: #bb6400;
     width: 25%;
     /* display: flex; */
-
 }
-
 
 
 /* 正中间内容区 */
 .content_center {
     background-color: #ffcc00;
-    width: 50%;
+    width: 70%;
     height: auto;
     margin: 0px;
     padding: 0px;
-
 }
 
 
-
+/* 推荐和热销区域 */
 .content_recommend,
 .content_hot {
-    background-color: #f6ee0a;
+    background-color: #f9f106;
     width: 100%;
     height: auto;
-    min-height: 45%;
     margin: 0px;
     padding: 0px;
+}
 
+/* 推荐和热销盒子 */
+.content_recommend_box,
+.content_hot_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+/* 推荐和热销盒子中的项目 */
+.content_recommend_box>div,
+.content_hot_box>div {
+    margin: 5px;
+    /* 确保项目之间没有间隔 */
+}
+
+
+.recommend_content {
+    width: 31.5%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f6c500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 0%;
+}
+
+
+.recommend_content>img {
+    width: 94%;
+    margin: 3%;
 }
 
 
 
 
-
+.recommend_content>h3 {
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 
 
@@ -709,84 +727,182 @@ input[type="submit"]:hover {
 .aside_right {
     background-color: #00bb0c;
     width: 25%;
+}
+
+
+.empty {
+    height: 5px;
+}
+
+
+
+/* 热销区域 */
+
+.hot_content {
+    background-color: #ffcc00;
+    width: 23.5%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 0%;
+    position: relative;
+}
+
+.hot_content>img {
+    width: 94%;
+    margin: 3%;
 
 }
+
+
+
+.hot_content>h3 {
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ============================================================================================== */
 /* D6区域 */
 
 .d6 {
-    background-color: #3cbdd7;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: grid;
-    height: auto;
-    min-height: 1000px;
-    padding: 10px;
-    grid-template-areas: 
-    "h3 h3 h3 h3 h3 h3"
-    "c1 c1 c1 c1 c1 c1"
-    "c2 c2 c2 c2 c2 c2"
-    "c2 c2 c2 c2 c2 c2"
-    "c2 c2 c2 c2 c2 c2"
-    "c2 c2 c2 c2 c2 c2"
-    ;
+    grid-template-rows: 1fr 1fr 1fr 15fr;
 }
 
-.zone_title{
-    grid-area: h3;
+.zone_title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    margin: 1%;
+    padding: 0;
+}
+
+.zone_choice_control {
+    list-style: none;
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.zone_choice_control li {
+    cursor: pointer;
+    margin: 0 1px;
+    border: 1px solid #ddd;
+    font-size: larger;
+}
+
+.zone_choice_control li.active {
+    background-color: #b9baba;
+    color: white;
+}
+
+.zone_choice_slide {
+    position: relative;
+    overflow: hidden;
+    border: #a7a7a7 10px inset;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.slide_zone {
+    display: flex;
+    padding: 0%;
+    transition: transform 0.5s ease;
+    padding: 0%;
+    margin: 0;
+    height: 100%;
+}
+
+.slide_zone>li {
+    flex: 0 0 100%;
 }
 
 
-.zone_choice {
-    grid-area: c1;
+
+.slide_zone>li {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #00bb0c;
 }
 
-.zone_choice_slide{
-    grid-area: c2;
+li div {
+    position: relative;
 }
 
 
 
+/* d6内容区 */
+
+
+#cn {
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "a c";
+}
 
 
 
+.earth-a {
+    grid-area: a;
+    background-color: #ffcc00;
+}
+
+.earth-b {
+    grid-area: b;
+    background-color: #00bb0c;
+}
+
+.earth-c {
+    grid-area: c;
+    background-color: #0ec357;
+}
 
 
+.earth-ul {
+    padding: 0%;
+}
 
 
+.earth-ul li:nth-child(odd) {
+    background-color: #b7ffa7;
+    /* 替换为你想要的颜色 */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.earth-ul li:nth-child(even) {
+    background-color: #10fd6b;
+    /* 替换为你想要的颜色 */
+}
 
 
 
@@ -821,55 +937,112 @@ input[type="submit"]:hover {
 }
 
 
-.d7 a:hover{
+.d7 a:hover {
     color: #ffcc00;
     /* 鼠标悬停颜色 */
 }
 
 
 .footer_1 {
-    display: flex; /* 使用flex布局使列并排显示 */
-    justify-content: space-between; /* 列之间的间距均匀分布 */
-    padding: 20px; /* 页脚内边距 */
-    background-color: #f7f7f7; /* 页脚背景颜色 */
-    font-family: Arial, sans-serif; /* 字体设置 */
+    display: flex;
+    /* 使用flex布局使列并排显示 */
+    justify-content: space-between;
+    /* 列之间的间距均匀分布 */
+    padding: 20px;
+    /* 页脚内边距 */
+    background-color: #f7f7f7;
+    /* 页脚背景颜色 */
+    font-family: Arial, sans-serif;
+    /* 字体设置 */
 }
 
 .col {
-    flex: 1; /* 每个列占据相等的空间 */
-    margin: 0 10px; /* 列之间的外边距 */
+    flex: 1;
+    /* 每个列占据相等的空间 */
+    margin: 0 10px;
+    /* 列之间的外边距 */
 }
 
 .col h4 {
-    color: #333; /* 标题颜色 */
-    margin-bottom: 15px; /* 标题与列表间距 */
+    color: #333;
+    /* 标题颜色 */
+    margin-bottom: 15px;
+    /* 标题与列表间距 */
 }
 
 .col ul {
-    list-style: none; /* 移除列表点 */
-    padding: 0; /* 移除默认内边距 */
+    list-style: none;
+    /* 移除列表点 */
+    padding: 0;
+    /* 移除默认内边距 */
 }
 
 .col li a {
-    text-decoration: none; /* 移除下划线 */
-    color: #666; /* 链接颜色 */
-    display: block; /* 使链接填满整个li */
-    padding: 5px 0; /* 链接的内边距 */
+    text-decoration: none;
+    /* 移除下划线 */
+    color: #666;
+    /* 链接颜色 */
+    display: block;
+    /* 使链接填满整个li */
+    padding: 5px 0;
+    /* 链接的内边距 */
 }
 
 .col li a:hover {
-    text-decoration: underline; /* 鼠标悬停时添加下划线 */
-    color: #000; /* 鼠标悬停时链接颜色变深 */
+    text-decoration: underline;
+    /* 鼠标悬停时添加下划线 */
+    color: #000;
+    /* 鼠标悬停时链接颜色变深 */
 }
 
-/* 响应式设计：在较小屏幕上堆叠列 */
-@media (max-width: 768px) {
-    .footer_1 {
-        flex-direction: column;
-    }
 
-    .col {
-        margin: 10px 0; /* 在较小屏幕上堆叠列时的间距 */
-    }
+
+
+
+/* ================================================================================================== */
+/* 背景图片更改 */
+
+html{
+    background-image: url('./图片/b5.jpg');
+    /* 背景图片设置 */
+    background-size: cover;
+    /* 背景图片大小 */
+    background-position: center;
+    /* 背景图片居中 */
+    background-repeat: no-repeat;
+    /* 背景图片不重复 */
+    background-attachment: fixed;
 }
 
+
+
+
+.background-one {
+    background-image: url('./图片/b2.jpg');
+}
+
+.background-two {
+    background-image: url('./图片/b5.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================================================================== */

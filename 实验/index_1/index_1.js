@@ -1,3 +1,32 @@
+
+
+// 背景图片切换
+
+window.addEventListener('scroll', function () {
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    var triggerPoint = 500; // 设置触发更换背景的位置，例如500px
+
+    if (scrollPosition > triggerPoint) {
+        document.html.classList.add('background-two');
+        document.html.classList.remove('background-one');
+    } else {
+        document.html.classList.add('background-one');
+        document.html.classList.remove('background-two');
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 关闭滚动字幕的函数
 document.getElementById('closeMarquee').addEventListener('click', function () {
     var marqueeContainer = document.getElementsByClassName('marquee');
@@ -70,3 +99,26 @@ setInterval(updateClock, 1000);
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slide_zone li');
+    const controls = document.querySelectorAll('.zone_choice_control li');
+    let currentIndex = 0;
+
+    function updateSlide() {
+        const totalSlides = slides.length;
+        document.querySelector('.slide_zone').style.transform = `translateX(-${currentIndex * 100}%)`;
+        controls.forEach((control, index) => {
+            control.classList.remove('active');
+            if (index === currentIndex) {
+                control.classList.add('active');
+            }
+        });
+    }
+
+    controls.forEach((control, index) => {
+        control.addEventListener('click', () => {
+            currentIndex = index;
+            updateSlide();
+        });
+    });
+});
