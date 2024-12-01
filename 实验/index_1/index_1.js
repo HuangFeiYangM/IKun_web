@@ -1,24 +1,5 @@
 
 
-// 背景图片切换
-
-window.addEventListener('scroll', function () {
-    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    var triggerPoint = 500; // 设置触发更换背景的位置，例如500px
-
-    if (scrollPosition > triggerPoint) {
-        document.html.classList.add('background-two');
-        document.html.classList.remove('background-one');
-    } else {
-        document.html.classList.add('background-one');
-        document.html.classList.remove('background-two');
-    }
-});
-
-
-
-
-
 
 
 

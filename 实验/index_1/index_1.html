@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="index_1.css">
 </head>
 
+<!-- <span class="iconfont">&#x33;</span> -->
+
 <body>
     <div class="fixnav_left">
         <ul>
-            <li>登录</li>
-            <li>注册</li>
-            <li>去购物车</li>
-            <li>回到顶部</li>
+            <span><img src="./图片/其他/客服.svg" alt=""></span>
+            <li>联系客服</li>
+            <span><img src="./图片/其他/购物车.svg" alt=""></span>
+            <li>购物车</li>
+            <span class="iconfont">&#xe6ec;</span>
+            <li>官方客服</li>
+            <span class="iconfont">&#xe61a;</span>
+            <li>反馈</li>
+            <span class="iconfont">&#xe6f3;
+            </span>
+            <li>举报</li>
+            <span class="iconfont">&#xe6fb;</span>
+            <li>顶部</li>
         </ul>
     </div>
 
@@ -33,7 +44,7 @@
     <div class="d2">
         <div class="nav_top">
             <ul>
-                <li><a href="#">首页</a></li>
+                <li><a href="#"><span class="iconfont" style="font-size: 30px;">&#xe67c;</span>首页</a></li>
                 <li><a href="#">中医咨询</a></li>
                 <li><a href="#">新闻资讯</a></li>
                 <li><a href="#">电子处方</a></li>
@@ -45,13 +56,16 @@
     <!-- 滚动广播 -->
     <div class="marquee">
         <div class="marquee-content">
-            请不要相信任何脱离本平台的交易,防止上当受骗!
+            请不要相信任何引导你脱离本平台的交易,防止上当受骗!
         </div>
         <button id="closeMarquee">×</button>
     </div>
+
+
+
     <div class="d3">
         <div class="left_top">
-            <p>分区导航</p>
+            <p><span class="iconfont">&#xe683;</span>分区导航</p>
             <div><a href="#">原产地选择</a></div>
             <div><a href="#">医药猎人</a></div>
             <div><a href="#">成品中药销售</a></div>
@@ -104,6 +118,7 @@
             </div>
 
             <form class="login-form" action="/login" method="post">
+                <img src="./图片/其他/yh.jpg" alt="" class="avatar">
                 <label for="username">用户:</label>
                 <input type="text" name="username" placeholder="请输入用户名" required>
                 <label for="password">密码:</label>
@@ -112,6 +127,7 @@
             </form>
 
             <div class="registerOrforget-box">
+
                 <a href="">忘记密码?</a>
                 <a href="">没有账号? 点击注册</a>
             </div>
@@ -127,8 +143,8 @@
     <div class="d4">
         <div class="search">
             <input type="text" placeholder="请输入关键字">
-            <button>搜索</button>
-            <img src="" alt="搜索">
+            <button> 搜索 <span class="iconfont">&#xeba1;</span></button>
+            <img src="" alt="">
         </div>
     </div>
 
@@ -560,7 +576,7 @@
 
     </div>
 
-    <div class="d6">
+    <div class="d6" style="display: none;">
         <h3 class="zone_title">医药猎人</h3>
         <p>让我们来帮助您寻找最适合您需要的中药材！</p>
         <div class="zone_choice">
@@ -593,7 +609,7 @@
                         </ul>
                     </div>
                     <div class="earth-b">
-                        
+
                     </div>
                     <div class="earth-c"></div>
                 </li>
