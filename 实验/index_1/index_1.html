@@ -21,8 +21,7 @@
             <li>官方客服</li>
             <span class="iconfont">&#xe61a;</span>
             <li>反馈</li>
-            <span class="iconfont">&#xe6f3;
-            </span>
+            <span class="iconfont">&#xe6f3;</span>
             <li>举报</li>
             <span class="iconfont">&#xe6fb;</span>
             <li>顶部</li>
@@ -36,7 +35,7 @@
     <div class="d1">
         <img src="./图片/logo/logo-2.png" alt="logo">
         <h1>本草阁</h1>
-        <p>中医药在线采购销售一站式服务平台</p>
+        <p>中医药在线采购销售咨询一站式服务平台</p>
 
     </div>
 
@@ -49,7 +48,7 @@
                 <li><a href="#">新闻资讯</a></li>
                 <li><a href="#">电子处方</a></li>
                 <li><a href="#">医师团队</a></li>
-                <li><a href="#">主站</a></li>
+                <li><a href="#">店铺</a></li>
             </ul>
         </div>
     </div>
@@ -65,12 +64,12 @@
 
     <div class="d3">
         <div class="left_top">
-            <p><span class="iconfont">&#xe683;</span>分区导航</p>
-            <div><a href="#">原产地选择</a></div>
-            <div><a href="#">医药猎人</a></div>
-            <div><a href="#">成品中药销售</a></div>
-            <div><a href="#">中医专用器械</a></div>
-            <div><a href="#">中药材拍卖市场</a></div>
+            <p><span class="iconfont">&#xe683;</span>首页导航</p>
+            <div class="link"><a class="a" href="#content_center">今日推荐</a></div>
+            <div class="link"><a class="a" href="#content_hot">热销成品</a></div>
+            <div class="link"><a class="a" href="#d65">热门产地</a></div>
+            <div class="link"><a class="a" href="#d75">今日热点</a></div>
+            <div class="link"><a class="a" href="#d85">中药材拍卖市场</a></div>
         </div>
         <div class="middle_top">
             <!-- Type = radio是单选按钮，name属性是用来控制单选按钮的，checked属性是默认选中的，slides_1是轮播图的容器，slide_1是轮播图的每一张图片 -->
@@ -143,8 +142,11 @@
     <div class="d4">
         <div class="search">
             <input type="text" placeholder="请输入关键字">
-            <button> 搜索 <span class="iconfont">&#xeba1;</span></button>
-            <img src="" alt="">
+            <button> 搜索 <span class="iconfont"></span></button>
+            <a href="" class="cam"><span class="iconfont"></span>
+                <p>拍照识物</p>
+            </a>
+
         </div>
     </div>
 
@@ -278,7 +280,7 @@
 
 
         </div>
-        <div class="content_center">
+        <div class="content_center" id="content_center">
             <!-- 今日推荐 -->
             <div class="content_recommend">
                 <h2>今日推荐</h2><span></span><span>换一批</span>
@@ -442,7 +444,7 @@
             </div>
 
             <!-- 热销成品 -->
-            <div class="content_hot">
+            <div class="content_hot" id="content_hot">
                 <h2>热销成品</h2>
                 <hr id="hr_c">
                 <div class="content_hot_box">
@@ -573,66 +575,171 @@
                 </ul>
             </div>
         </div>
+    </div>
+
+    <div class="d65" id="d65">
+        <h3>热门原产地</h3>
+    </div>
+    <!-- 热门原产地 -->
+    <div class="d6">
+        <div class="d6_1">
+            <img src="./图片/logo/logo-2.png" alt="" class="img-tp">
+            <div class="d6_1_s">
+                <span class="iconfont">1</span>
+                <input type="text">
+                <button>搜索<span class="iconfont">1</span></button>
+
+            </div>
+            <ul class="d6_1_u">
+                <li>1安徽亳州 255636</li>
+                <li>2河北安国 211145</li>
+                <li>3江西樟树 190253</li>
+                <li>4河南禹州 190251</li>
+                <li>5四川 190110</li>
+                <li>6云南 189971</li>
+                <li>7贵州 189900</li>
+                <li>8山东 189805</li>
+            </ul>
+        </div>
+        <div class="d6_2">
+            <h4><span class="iconfont">1</span> 国内产地</h4>
+            <span>查看更多</span>
+            <ul class="d6_2_c1">
+                <li><a href=""><span class="iconfont"></span>安徽 亳州</a></li>
+                <li><a href=""><span class="iconfont"></span>河南省 禹州</a></li>
+                <li><a href=""><span class="iconfont"></span>成都市 荷花池</a></li>
+                <li><a href=""><span class="iconfont"></span>河北省 安国</a></li>
+                <li><a href=""><span class="iconfont"></span>江西 樟树</a></li>
+            </ul>
+            <ul class="d6_2_c2">
+                <li><a href=""><span class="iconfont"></span>霍山县</a></li>
+                <li><a href=""><span class="iconfont"></span>四川灌县</a></li>
+                <li><a href=""><span class="iconfont"></span>浙江 磐安县</a></li>
+                <li><a href=""><span class="iconfont"></span>云南文山壮族苗族自治州</a></li>
+                <li><a href=""><span class="iconfont"></span>甘肃 陇西</a></li>
+            </ul>
+            <ul class="d6_2_c3">
+                <li><a href=""><span class="iconfont"></span>浙江省 蔡徐村</a></li>
+                <li><a href=""><span class="iconfont"></span>云南省</a></li>
+                <li><a href=""><span class="iconfont"></span>贵州 遵义</a></li>
+                <li><a href=""><span class="iconfont"></span>山东 东阿</a></li>
+                <li><a href=""><span class="iconfont"></span>广西 玉林</a></li>
+            </ul>
+            <ul class="d6_2_c4">
+                <li><a href=""><span class="iconfont"></span>福建 泉州</a></li>
+                <li><a href=""><span class="iconfont"></span>广东 广州</a></li>
+                <li><a href=""><span class="iconfont"></span>湖南 邵东</a></li>
+                <li><a href=""><span class="iconfont"></span>湖北 蕲春</a></li>
+                <li><a href=""><span class="iconfont"></span>陕西 商洛</a></li>
+            </ul>
+        </div>
+        <div class="d6_3">
+            <h4><span class="iconfont">1</span>国外产地</h4>
+            <span>查看更多</span>
+            <ul class="d6_3_c1">
+                <li><a href=""><span class="iconfont"></span>印度</a></li>
+                <li><a href=""><span class="iconfont"></span>泰国</a></li>
+                <li><a href=""><span class="iconfont"></span>越南</a></li>
+                <li><a href=""><span class="iconfont"></span>马来西亚</a></li>
+                <li><a href=""><span class="iconfont"></span>印度尼西亚</a></li>
+            </ul>
+            <ul class="d6_3_c2">
+                <li><a href=""><span class="iconfont"></span>美国</a></li>
+                <li><a href=""><span class="iconfont"></span>加拿大</a></li>
+                <li><a href=""><span class="iconfont"></span>巴西</a></li>
+                <li><a href=""><span class="iconfont"></span>墨西哥</a></li>
+                <li><a href=""><span class="iconfont"></span>阿根廷</a></li>
+            </ul>
+            <ul class="d6_3_c3">
+                <li><a href=""><span class="iconfont"></span>南非</a></li>
+                <li><a href=""><span class="iconfont"></span>澳大利亚</a></li>
+                <li><a href=""><span class="iconfont"></span>新西兰</a></li>
+                <li><a href=""><span class="iconfont"></span>俄罗斯</a></li>
+                <li><a href=""><span class="iconfont"></span>土耳其</a></li>
+            </ul>
+            <ul class="d6_3_c4">
+                <li><a href=""><span class="iconfont"></span>德国</a></li>
+                <li><a href=""><span class="iconfont"></span>法国</a></li>
+                <li><a href=""><span class="iconfont"></span>意大利</a></li>
+                <li><a href=""><span class="iconfont"></span>西班牙</a></li>
+                <li><a href=""><span class="iconfont"></span>英国</a></li>
+            </ul>
+        </div>
 
     </div>
 
-    <div class="d6" style="display: none;">
-        <h3 class="zone_title">医药猎人</h3>
-        <p>让我们来帮助您寻找最适合您需要的中药材！</p>
-        <div class="zone_choice">
-            <!-- 轮播图控制 -->
-            <ul class="zone_choice_control">
-                <li>中国本土</li>
-                <li>海外原产</li>
-                <li>火星基地</li>
-                <li>木卫二原产地</li>
-            </ul>
-        </div>
-        <div class="zone_choice_slide">
-            <!-- 轮播页面 -->
-            <ul class="slide_zone">
-                <li id="cn">
-                    <div class="earth-a">
-                        <h4>您的委托</h4>
-                        <hr>
-                        <ul class="earth-ul">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                        </ul>
-                    </div>
-                    <div class="earth-b">
-
-                    </div>
-                    <div class="earth-c"></div>
-                </li>
-                <li id="overseas">
-                    <div class="overseas-a"></div>
-                    <div class="overseas-b"></div>
-                    <div class="overseas-c"></div>
-                </li>
-                <li id="mars">
-                    <div class="mars-a"></div>
-                    <div class="mars-b"></div>
-                    <div class="mars-c"></div>
-                </li>
-                <li id="wood">
-                    <div class="wood-a"></div>
-                    <div class="wood-b"></div>
-                    <div class="wood-c"></div>
-                </li>
-            </ul>
-        </div>
+    <div class="d75" id="d75">
+        <h3><span>1</span>热点新闻</h3>
     </div>
-
     <div class="d7">
+        <div class="d7-1">
+            <!-- 轮播图 -->
+            <div class="d7-1-1">
+                <div class="sl-1">1</div>
+                <div class="sl-2">2</div>
+                <div class="sl-3">3</div>
+                <div class="sl-4">4</div>
+            </div>
+            <!--轮播图-->
+            <span class="d7-1-2"><span>1</span></span>
+            <span class="d7-1-3"><span>1</span></span>
+        </div>
+
+        <div class="d7-2">
+            <span>1</span><h4>今日头条</h4>
+            <hr>
+            <ul>
+                <li><a href=""><span class="iconfont">&#xe600;</span>请我们西方的朋友,做出回答!</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>祝贺本草阁成功上市</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>震惊!德国一小伙一针救活了本地奄奄一息的大小姐,富豪给出的筹码是...</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>震惊!,朝鲜居然出现三日凌空!</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医文化：传统医学的历史与发展</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>著名中医大师的黑色高级教程被追尾,大师的惩罚是...</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医养生：春季养肝秘诀</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>震惊！中医药的“神”在哪？</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中国医药学：中医药的发展与现状</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医药走向世界,反思与展望</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>突发!花果山一男子居然对另一名男子做出不雅行为</a></li>
+                
+            </ul>
+            <span><a href="">查看更多>></a></span>
+        </div>
+        <div class="d7-3">
+            <span>1</span><h4>站内新闻</h4>
+            <hr>
+            <ul>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医治疗：针灸在现代医疗中的应用</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医药膳：健康食谱推荐</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医文化：传统医学的历史与发展</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中药种植：如何在家中种植药材</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医养生：春季养肝秘诀</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>本站独家：中医大师访谈录</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医药研究：新发现的药材成分</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医养生：夏季如何调理身体</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医药市场：最新药材价格动态</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医治疗：推拿按摩的科学依据</a></li>
+                <li><a href=""><span class="iconfont">&#xe600;</span>中医药学：中医药的发展与现状</a></li>
+            </ul>
+            <span><a href="">查看更多>></a></span>
+        </div>
+        
+    </div>
+
+    <div class="d85" id="d85">
+        <h3><span>1</span>中医药拍卖市场</h3>
+
+    </div>
+    <div class="d8">
+        <div class="d8-1"><img src="./图片/logo/logo-2.png" alt=""></div>
+        <div class="locker">温馨提示:请您先登录在进行操作
+            <div class="log"><a href="">立即登录</a></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="d9">
         <div class="footer_1">
             <div class="col">
                 <h4>购物指南</h4>
@@ -640,13 +747,15 @@
                     <li><a href="#.">购物流程</a></li>
                     <li><a href="#.">会员介绍</a></li>
                     <li><a href="#.">联系客服</a></li>
+                    <li><a href="#.">团购优惠</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h4>配送方式</h4>
                 <ul>
                     <li><a href="#.">上门自提</a></li>
-                    <li><a href="#.">限时达</a></li>
+                    <li><a href="#.">同城快递</a></li>
+                    <li><a href="#.">邮局平邮</a></li>
                 </ul>
             </div>
             <div class="col">
@@ -654,6 +763,8 @@
                 <ul>
                     <li><a href="#.">货到付款</a></li>
                     <li><a href="#.">在线支付</a></li>
+                    <li><a href="#.">小草凑钱</a></li>
+
                 </ul>
             </div>
             <div class="col">
@@ -661,6 +772,8 @@
                 <ul>
                     <li><a href="#.">售后政策</a></li>
                     <li><a href="#.">价格保护</a></li>
+                    <li><a href="#.">退款说明</a></li>
+                    <li><a href="#.">加入我们</a></li>
                 </ul>
             </div>
         </div>
@@ -677,7 +790,7 @@
                 <a href="https://www.twitter.com" target="_blank">Twitter</a> |
                 <a href="https://www.instagram.com" target="_blank">Instagram</a>
             </p>
-            <p><a href="/terms">服务条款</a> | <a href="/privacy">隐私政策</a></p>
+            <p><a href="/terms">服务条款</a> | <a href="/privacy">隐私政策</a></p>  <a href="/about">浙ICP备114514号</a> | <a href="/about">浙公网安备 1919810号</a>
         </div>
 
     </div>

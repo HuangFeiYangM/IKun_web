@@ -21,7 +21,7 @@ document.getElementById('closeMarquee').addEventListener('click', function () {
 });
 
 
-// 文档加载完成后执行的函数
+// 第一个幻灯片切换的函数
 document.addEventListener('DOMContentLoaded', function () {
     let index = 0;
     const slides = document.querySelectorAll('.slide_1');
@@ -80,26 +80,41 @@ setInterval(updateClock, 1000);
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const slides = document.querySelectorAll('.slide_zone li');
-    const controls = document.querySelectorAll('.zone_choice_control li');
-    let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', function(){
+    let index = 0;
+    const slides = document.querySelectorAll('.d7-1-1 .sl-1, .d7-1-1 .sl-2, .d7-1-1 .sl-3, .d7-1-1 .sl-4'); // 获取所有幻灯片元素 
+    const nextButton = document.querySelector('.d7-1-3');
+    const prevButton = document.querySelector('.d7-1-2');
+    const interval = 5000; // 5秒切换一次幻灯片
 
-    function updateSlide() {
-        const totalSlides = slides.length;
-        document.querySelector('.slide_zone').style.transform = `translateX(-${currentIndex * 100}%)`;
-        controls.forEach((control, index) => {
-            control.classList.remove('active');
-            if (index === currentIndex) {
-                control.classList.add('active');
-            }
+    
+    // 切换幻灯片的函数
+    function changeSlide(forward) { 
+        slides.forEach(slide => {
+            slide.style.left = `${index * -100}%`; // 将当前幻灯片归位
         });
+        index = forward ? (index + 1) % slides.length : (index - 1 + slides.length) % slides.length;
+        for (let i = 0; i < slides.length; i++) { 
+            slides[i].style.left=`${(i - index) * 100}%`;
+        }
+    }
+    
+
+    // 自动播放轮播图的函数
+    function startAutoPlay() {
+        setInterval(() => {
+            changeSlide(true);
+        }, interval);
     }
 
-    controls.forEach((control, index) => {
-        control.addEventListener('click', () => {
-            currentIndex = index;
-            updateSlide();
-        });
-    });
-});
+    // 绑定按钮事件以切换幻灯片
+    nextButton.addEventListener('click', () => changeSlide(true));
+    prevButton.addEventListener('click', () => changeSlide(false));
+
+    // 初始化自动播放
+    startAutoPlay();
+})
+
+
+
+
