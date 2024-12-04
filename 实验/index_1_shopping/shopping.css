@@ -1,0 +1,176 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header {
+    background-color: #ffffff;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 1px 5px #555;
+    position: relative;
+}
+
+
+.header>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header>ul>li {
+    position: relative;
+}
+
+
+
+.header>ul>li>a {
+    color: #717171;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header_1 {
+    float: left;
+    position: absolute;
+    left: 0;
+}
+
+.header_2 {
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.header_1>li {
+    float: left;
+    margin-left: 40px;
+}
+
+
+
+.header_2>li {
+    float: right;
+    margin-right: 40px;
+}
+
+
+.header>ul>li>a:hover {
+    color: #ff0000;
+}
+
+.dropdown {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 1px 5px #555;
+    background-color: antiquewhite;
+    /* 只保留垂直的滚动条 */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    left: -4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    border-radius: 5px;
+
+}
+
+
+
+.l1:hover .dropdown-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown>li {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+
+
+.dropdown>li:hover {
+    background-color: #f2f2f2;
+}
+
+
+.l2:hover .dropdown-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: -100px;
+}
+
+
+
+
+
+/* ================================================================================================================== */
+
+
+
+.d1 {
+    height: 100px;
+    width: 90%;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-areas:
+        "logo search search search search ad";
+}
+
+
+
+.d1>div {
+    border: 1px solid #555;
+}
+
+
+.d1-1 {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.d1-1>img {
+    height: 90%;
+    width: auto;
+    margin: 5px;
+}
+
+
+
+
+
+.d1-2 {
+    grid-area: search;
+}
+
+.d1-3 {
+    grid-area: ad;
+}
