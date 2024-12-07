@@ -5,6 +5,15 @@
     list-style: none;
 }
 
+button{
+    
+    cursor: pointer;
+
+}
+
+del {
+    text-decoration: line-through;
+}
 
 body {
     display: flex;
@@ -25,6 +34,9 @@ select:focus {
     border-color: initial;
     box-shadow: none;
 }
+
+
+
 /* ============================================================================================ */
 .fixnav_right {
     position: fixed;
@@ -84,7 +96,91 @@ select:focus {
     transform: scale(1.2);
     /* 放大效果 */
 }
+
 /* ================================================================================= */
+/* 底部区域 */
+
+.d9 {
+    background-color: #f2f2f2;
+    /* 尾部背景颜色 */
+    padding: 20px;
+    /* 内边距 */
+    font-size: 14px;
+    /* 字体大小 */
+    text-align: center;
+    /* 文本居中 */
+    margin-top: 0px;
+    /* 与页面内容的间距 */
+    width: 90%;
+}
+
+.d9 p {
+    margin: 0;
+    /* 段落间距 */
+}
+
+.d9 a {
+    color: #333;
+    /* 链接颜色 */
+    text-decoration: none;
+    /* 无下划线 */
+}
+
+
+.d9 a:hover {
+    color: #ffcc00;
+    /* 鼠标悬停颜色 */
+}
+
+
+.footer_1 {
+    display: flex;
+    /* 使用flex布局使列并排显示 */
+    justify-content: space-between;
+    /* 列之间的间距均匀分布 */
+    padding: 20px;
+    /* 页脚内边距 */
+    background-color: #f7f7f7;
+    /* 页脚背景颜色 */
+    font-family: Arial, sans-serif;
+    /* 字体设置 */
+}
+
+.col {
+    flex: 1;
+    /* 每个列占据相等的空间 */
+    margin: 0 10px;
+    /* 列之间的外边距 */
+}
+
+.col h4 {
+    color: #333;
+    /* 标题颜色 */
+    margin-bottom: 15px;
+    /* 标题与列表间距 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header {
     background-color: #ffffff;
     height: 40px;
@@ -201,4 +297,902 @@ select:focus {
 
 
 
-/*  */
+/* ========================================================================================================== */
+
+.d1 {
+    height: 100px;
+    padding: 5px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 1300px;
+    border: #ff0000 solid 1px;
+}
+
+.d1>* {
+    border: #007bff solid 1px;
+    margin-left: 10px;
+}
+
+
+.d1>h1 {
+    font-size: 30px;
+    width: 10%;
+}
+
+
+.d1>img {
+    width: 100px;
+    height: 100px;
+}
+
+.ad-1 {
+    height: 100px;
+    width: 300px;
+}
+
+.search-box {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+.search {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: #555 solid 1px;
+    border-radius: 10px;
+}
+
+.search>input {
+    width: 75%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    /* 记得给其他页面的input标签设置padding-left: 10px; */
+    padding-left: 10px;
+    border: #555 solid 1px;
+    font-size: 17px;
+}
+
+.search>button {
+    width: 25%;
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ======================================================================================== */
+
+
+.d2 {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 1300px;
+    border: #555 solid 1px;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+
+.d2>* {
+    border: #007bff solid 1px;
+    margin-left: 10px;
+    height: 50px;
+
+}
+
+/* ------------------------------------------------------------------------------------- */
+.d2-1 {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.d2-1>img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.d2-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.d2-2-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: #555 solid 1px;
+}
+
+.d2-2-1>span {
+    font-size: 15px;
+    margin: 4px;
+}
+
+.d2-2-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+
+}
+
+
+.d2-2-2>p {
+    font-size: 15px;
+    margin: 4px;
+    border: #555 solid 1px;
+    height: 100%;
+    margin-right: 20px;
+    padding: 4px;
+}
+
+
+
+
+.d2-3 {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.d2-3>a {
+    font-size: 15px;
+    margin: 4px;
+    border: #555 solid 1px;
+    padding: 8px;
+}
+
+
+
+
+
+/* ======================================================================================================= */
+
+
+.d3 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-gap: 10px;
+    min-width: 1300px;
+    border: #555 solid 1px;
+    margin-top: 10px;
+    padding: 5px;
+    /* 临时高度 */
+    min-height: 800px;
+}
+
+/* ------------------------------------------------------------- */
+.d3-1 {
+    border: #555 solid 1px;
+}
+
+
+
+.d3-1>ul {
+    height: 80%;
+    padding: 0%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin: 4px;
+
+}
+
+.sl {
+
+    width: 100%;
+    height: 100%;
+    background-color: #fce703;
+    position: absolute;
+    top: 0%;
+}
+
+.sl1 {
+    top: 0%;
+}
+
+.sl2 {
+    top: 100%;
+}
+
+.sl3 {
+    top: 200%;
+}
+
+.sl4 {
+    top: 300%;
+}
+
+input[type="radio"] {
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.control-visible-a {
+    position: absolute;
+    bottom: 40%;
+    right: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.control-visible-a label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border: #555 3px solid;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+
+
+.slider-a input[type="radio"]:nth-of-type(1):checked~.control-visible-a label:nth-of-type(1) {
+    background-color: rgb(34, 34, 34);
+}
+
+.slider-a input[type="radio"]:nth-of-type(2):checked~.control-visible-a label:nth-of-type(2) {
+    background-color: rgb(34, 34, 34);
+}
+
+.slider-a input[type="radio"]:nth-of-type(3):checked~.control-visible-a label:nth-of-type(3) {
+    background-color: rgb(34, 34, 34);
+
+}
+
+.slider-a input[type="radio"]:nth-of-type(4):checked~.control-visible-a label:nth-of-type(4) {
+    background-color: rgb(34, 34, 34);
+
+}
+
+.slider-a input[type="radio"]:nth-of-type(1):checked~.sl {
+    transform: translateY(0%);
+}
+
+.slider-a input[type="radio"]:nth-of-type(2):checked~.sl {
+    transform: translateY(-100%);
+}
+
+.slider-a input[type="radio"]:nth-of-type(3):checked~.sl {
+    transform: translateY(-200%);
+}
+
+.slider-a input[type="radio"]:nth-of-type(4):checked~.sl {
+    transform: translateY(-300%);
+}
+
+.slider-a>li {
+    transition: 0.5s transform ease-in-out;
+}
+
+/* ----------------------------------------------------------------- */
+
+.slider-content-a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: #555 solid 1px;
+    margin: 4px;
+    margin-top: 8px;
+    ;
+    height: auto;
+    padding: 4px;
+}
+
+.slider-content-a>div {
+    height: 100px;
+    width: 25%;
+    border: #555 solid 1px;
+    border-radius: 10px;
+    margin: 4px;
+    display: flex;
+}
+
+
+/* ----------------------------------------------------------- */
+.d3-2 {
+    border: #555 solid 1px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.d3-2>div {
+    padding: 5px;
+    margin: 5px;
+    border: #555 solid 1px;
+    border-radius: 10px;
+}
+
+
+
+.d3-2>h2 {
+    padding: 5px;
+    margin: 5px;
+    font-size: 30px;
+    box-sizing: content-box;
+}
+
+.jg {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: #555 solid 1px;
+}
+
+
+.jg1 {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+
+.jg2 {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.jg3 {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.jg4 {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+
+
+/* -------------------------------------------------------- */
+
+.d3-2-1 {
+    position: relative;
+}
+
+.d3-2-drop {
+    position: relative;
+}
+
+
+.d3-2-drop-content {
+    box-shadow: #555 0px 0px 5px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 27px;
+    left: 10px;
+    display: none;
+    background-color: #ffffff;
+    z-index: 555;
+}
+
+
+.d3-2-drop-content>div {
+    padding: 5px;
+}
+
+.d3-2-drop-content>div>h3 {
+    width: 290px;
+    height: 10%;
+    border: #555 solid 1px;
+}
+
+.d3-2-drop-content>div>div {
+    width: 290px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: #555 solid 1px;
+}
+
+
+
+
+
+
+.d3-2-drop:hover .d3-2-drop-content {
+    display: flex;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+.d3-2-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.d3-2-drop-2 {
+    position: relative;
+}
+
+.d3-2-drop-content-2 {
+    position: absolute;
+    width: 100px;
+
+    top: 20px;
+    left: 5px;
+    display: none;
+    background-color: #ffffff;
+}
+
+.d3-2-drop-content-2>li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.d3-2-drop-content-2>li:hover {
+    background-color: #b9b9b9;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.d3-2-drop-2:hover .d3-2-drop-content-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #717171 0px 0px 5px;
+    padding: 5px;
+    margin: 0;
+    z-index: 555;
+}
+
+
+/* ---------------------------------------------------------- */
+/* d3-2-3 */
+
+.choice-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    
+}
+
+.choice-box>div {
+    height: 30px;
+    width: 200px;
+    border: #555 solid 1px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
+
+.d3-2-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.d3-2-4>input {
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+.d3-2-5 {}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.d3-2-6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.d3-2-6>button {
+    margin-right: 30px;
+    width: 40%;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+
+
+
+/* =============================================================================================== */
+
+.d4-banner {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 1300px;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+}
+
+.d4-banner>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.d4-banner>ul>li {
+    margin: 10px;
+}
+
+.d4-banner>ul>li:hover {
+    background-color: #b9b9b9;
+    cursor: pointer;
+}
+
+
+/* ========================================================================================================= */
+/* d4 */
+
+
+.d4 {
+    margin-top: 10px;
+    width: 90%;
+    min-width: 1300px;
+    min-height: 1500px;
+    background-color: #f2f2f2;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-bottom: 20px;
+    
+    
+}
+
+.d4-content {
+    /* border: #555 solid 1px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+.d4-d3 {
+    width: 600px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: 5px;
+    /* border: #555 solid 1px; */
+    position: sticky;
+    top: 10%;
+    display: flex;
+}
+
+.d4-d3-logo{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+}
+
+
+
+/* =========================================================================================================================== */
+
+
+
+
+
+
+
+.d4-content>div {
+    min-width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.d4-content>h2 {
+    margin-top: 0;
+}
+
+.d4-content-1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+
+}
+.d4-content-1-ul{
+    margin-top: 10px;
+}
+
+.d4-content-1-ul>li{
+    /* border: #007bff solid 1px; */
+    box-shadow: #333 0px 0px 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom:10px ;
+
+}
+
+.who-img{
+    grid-area: img;
+    width: 50px;
+    height: 50px;
+    border: #333 solid 1px;
+    border-radius: 50%;
+    
+}
+
+.who {
+    width: 100%;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr 2.5fr; 
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "w1 w2 w3"
+        "w1 w4 w4";
+}
+
+.who > div{
+    /* border: #007bff solid 1px; */
+}
+
+.w1 {
+    grid-area: w1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    font-size: 20px;
+
+}
+
+.time{
+    font-size: 14px;
+    color: #969696;
+}
+
+
+.w2 {
+    grid-area: w2;
+    
+    
+}
+
+.w3 {
+    grid-area: w3;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.w4 {
+    grid-area: w4;
+
+}
+
+
+
+
+
+.d4-content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.d4-content-table,
+.d4-content-table th,
+.d4-content-table td {
+    border: 1px solid #ddd;
+}
+
+.d4-content-table th,
+.d4-content-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.d4-content-table th {
+    background-color: #f4f4f4;
+}
+
+.d4-content-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.d4-content-images img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+.d4-content-1-btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.d4-content-1-btn>button{
+    width: 100px;
+    height: 40px;
+}
+
+
+
+
+
+
+/* ======================================================================================================================== */
+/* d5 */
+/*店内推荐&猜你喜欢*/
+.d5{
+    width: 90%;
+}
+
+
+
+
+.zone-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+
+
+.zone-list>div {
+    border: #555 1px solid;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+
+.zone-list>div>img {
+    
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+
+.zone-list>div>h3 {
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
