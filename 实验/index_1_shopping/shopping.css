@@ -26,6 +26,22 @@ select:focus {
     box-shadow: none;
 }
 
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.woff2?t=1733643667699') format('woff2'),
+        url('iconfont.woff?t=1733643667699') format('woff'),
+        url('iconfont.ttf?t=1733643667699') format('truetype');
+}
+
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 /* ================================================================================= */
 
 .header {
@@ -36,8 +52,6 @@ select:focus {
     box-shadow: 0px 1px 5px #555;
     position: relative;
     min-width: 1500px;
-    position: sticky;
-    top: 0;
     z-index: 999;
 }
 
@@ -119,6 +133,7 @@ select:focus {
     flex-direction: column;
     align-items: center;
     height: 200px;
+    z-index: 999;
 }
 
 .dropdown>li {
@@ -154,7 +169,6 @@ select:focus {
 
 
 .d1 {
-    margin-top: 10px;
     height: auto;
     width: 90%;
     min-width: 1300px;
@@ -165,8 +179,9 @@ select:focus {
     grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
     grid-template-rows: auto;
     position: sticky;
-    top: 40px;
-    z-index: 999;
+    top: 50px;
+    z-index: 500;
+
 }
 
 
@@ -301,13 +316,18 @@ select:focus {
     border: #555 3px solid;
     border-radius: 5px;
 }
+.d1-3>a>img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 
 
 /* =========================================================================== */
 
 
 .d2 {
-    height: 600px;
     width: 90%;
     min-width: 1300px;
     box-sizing: border-box;
@@ -321,7 +341,7 @@ select:focus {
     /* 定义五列，每列占据等分空间 */
     grid-template-rows: auto;
     /* 定义行高自动 */
-
+    
 }
 
 
@@ -543,7 +563,11 @@ input[type="radio"] {
     transition: 0.5s transform ease-in-out;
 }
 
-
+.sl>a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
 
 
 
@@ -551,23 +575,62 @@ input[type="radio"] {
 
 /* ------------------------------------------------------------ */
 
-.d2-2-2 {
-    grid-area: d2-2-2;
+.d2-2-2>img,
+.d2-2-3>img,
+.d2-2-4>img,
+.d2-2-5>img {
+    width: 100%;
+    height: 250px;
+    object-fit: fill; /* 或者可以使用 contain */
+    border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+.d2-2-2 {
+    display: flex;
+    flex-direction: column;
+    grid-area: d2-2-2;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .d2-2-3 {
     grid-area: d2-2-3;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 
 .d2-2-4 {
     grid-area: d2-2-4;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 
 .d2-2-5 {
     grid-area: d2-2-5;
+    border-radius: 10px;
+    padding: 10px;
+
 }
 
 
@@ -785,13 +848,14 @@ input[type="radio"] {
     align-items: center;
     margin: 20px;
     border: #555 1px solid;
-    padding: 20px;
+    padding: 10px;
     background-color: antiquewhite;
     border-radius: 10px;
-    position: relative;
     position: sticky;
-    top: 153px;
-    z-index: 999;
+    top: 166px;
+    z-index: 888;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .zone-choice>div {
@@ -1033,9 +1097,18 @@ input[type="radio"] {
     text-align: center;
     padding: 5px;
     cursor: pointer;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    /* 平滑过渡效果 */
 }
 
+
+.fixrefresh_left>p{
+    font-size: 18px;
+}
 
 
 
@@ -1075,4 +1148,80 @@ input[type="radio"] {
 
 .page a:hover {
     background-color: #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+/* ======================================================================= */
+/* 补丁 */
+
+/* 导航栏 */
+.nav_top {
+    display: flex;
+    /* 设置为 flex 容器 */
+    width: 100%;
+    /* 占据整个 .d2 的宽度 */
+    height: 50px;
+}
+
+
+.nav-index-1 {
+    display: flex;
+    justify-content: flex-start;
+    /* 使子元素靠左对齐 */
+    background-color: #b3b3b3;
+    width: 90%;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    min-width: 1300px;
+    z-index: 500;
+    box-shadow: 0px 1px 5px #555;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-index-1 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+}
+
+.nav-index-1 li {
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+    /* 移除外边距 */
+    text-align: center;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-index-1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.nav-index-1 a:hover{
+    color: #ff0000;
+    background-color: #ffffff;
 }
